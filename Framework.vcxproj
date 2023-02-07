@@ -1,0 +1,538 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{f1e5317f-539f-40f6-a720-d72b12245f75}</ProjectGuid>
+    <RootNamespace>My0419</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Framework</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;C:\Users\ika3g\source\repos\GM31\Framework\lib;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;C:\Users\ika3g\source\repos\GM31\Framework\lib;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>C:\Users\ika3g\source\repos\GM31\Framework\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>C:\Users\ika3g\source\repos\GM31\Framework\include</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <FxCompile Include="hlsl\common.hlsl">
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">asset\shader\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">asset\shader\%(Filename).cso</ObjectFileOutput>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="hlsl\computeShaderCommonTest.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="hlsl\computeShaderTest.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="hlsl\debugLinePS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">asset\shader\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">asset\shader\%(Filename).cso</ObjectFileOutput>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="hlsl\debugLineVS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">asset\shader\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">asset\shader\%(Filename).cso</ObjectFileOutput>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="hlsl\gpuParticleCS.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="hlsl\gpuParticlePS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">asset\shader\%(Filename).cso</ObjectFileOutput>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ExcludedFromBuild>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">asset\shader\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="hlsl\gpuParticleVS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">asset\shader\%(Filename).cso</ObjectFileOutput>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ExcludedFromBuild>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">asset\shader\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="hlsl\toonPS.hlsl">
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">asset\shader\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">asset\shader\%(Filename).cso</ObjectFileOutput>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="hlsl\toonVS.hlsl">
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">asset\shader\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">asset\shader\%(Filename).cso</ObjectFileOutput>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="hlsl\unlitTexturePS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">asset\shader\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">asset\shader\%(Filename).cso</ObjectFileOutput>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="hlsl\unlitTextureVS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">asset\shader\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">asset\shader\%(Filename).cso</ObjectFileOutput>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="hlsl\vertexLightingPS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">asset\shader\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">asset\shader\%(Filename).cso</ObjectFileOutput>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="hlsl\vertexLightingVS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">asset\shader\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">asset\shader\%(Filename).cso</ObjectFileOutput>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\aabbCollider3d.h" />
+    <ClInclude Include="source\audio.h" />
+    <ClInclude Include="source\audioContainer.h" />
+    <ClInclude Include="source\audioSpeaker.h" />
+    <ClInclude Include="source\blinkImage.h" />
+    <ClInclude Include="source\callbackListner.h" />
+    <ClInclude Include="source\camera.h" />
+    <ClInclude Include="source\capsuleCollider3d.h" />
+    <ClInclude Include="source\collider3d.h" />
+    <ClInclude Include="source\collision3dManager.h" />
+    <ClInclude Include="source\collisionContactRecorder.h" />
+    <ClInclude Include="source\collisionContactRecorder_EnemyAttack.h" />
+    <ClInclude Include="source\collisionContactRecorder_PlayerAttack.h" />
+    <ClInclude Include="source\component.h" />
+    <ClInclude Include="source\componentDebugInfo.h" />
+    <ClInclude Include="source\debugCameraControl.h" />
+    <ClInclude Include="source\debugConsole.h" />
+    <ClInclude Include="source\debugManager.h" />
+    <ClInclude Include="source\debugWindow.h" />
+    <ClInclude Include="source\debugWindow_Hierarchy.h" />
+    <ClInclude Include="source\debugWindow_Inspector.h" />
+    <ClInclude Include="source\debugWindow_SceneChanger.h" />
+    <ClInclude Include="source\componentDebug_TestInvoke.h" />
+    <ClInclude Include="source\demo_CollisionSplit0.h" />
+    <ClInclude Include="source\demo_CollisionSplit1.h" />
+    <ClInclude Include="source\demo_Invoke.h" />
+    <ClInclude Include="source\demo_Parent.h" />
+    <ClInclude Include="source\DirectWrite.h" />
+    <ClInclude Include="source\draw2dComponent.h" />
+    <ClInclude Include="source\draw3dComponent.h" />
+    <ClInclude Include="source\eggEnemyAnimationStateBase.h" />
+    <ClInclude Include="source\eggEnemyAnimationState_Approach.h" />
+    <ClInclude Include="source\eggEnemyAnimationState_Find.h" />
+    <ClInclude Include="source\eggEnemyAnimationState_HeadAttack.h" />
+    <ClInclude Include="source\eggEnemyAnimationState_KnockBack.h" />
+    <ClInclude Include="source\eggEnemyAnimationState_None.h" />
+    <ClInclude Include="source\eggEnemyAnimationState_Wince.h" />
+    <ClInclude Include="source\eggEnemyAttackCollision.h" />
+    <ClInclude Include="source\eggEnemyManager.h" />
+    <ClInclude Include="source\eggEnemyState_Wince.h" />
+    <ClInclude Include="source\enemyAnimationStateBase.h" />
+    <ClInclude Include="source\enemyAttackCollision.h" />
+    <ClInclude Include="source\enemyJumpCollision.h" />
+    <ClInclude Include="source\enemyManager.h" />
+    <ClInclude Include="source\enemySearchCollision.h" />
+    <ClInclude Include="source\eggEnemyStateBase.h" />
+    <ClInclude Include="source\eggEnemyState_Approach.h" />
+    <ClInclude Include="source\eggEnemyState_HeadAttack.h" />
+    <ClInclude Include="source\eggEnemyState_Death.h" />
+    <ClInclude Include="source\eggEnemyState_Find.h" />
+    <ClInclude Include="source\eggEnemyState_KnockBack.h" />
+    <ClInclude Include="source\eggEnemyState_Search.h" />
+    <ClInclude Include="source\eggEnemyState_Stick.h" />
+    <ClInclude Include="source\encryptionSystem.h" />
+    <ClInclude Include="source\enemyStateBase.h" />
+    <ClInclude Include="source\firstPersonCamera.h" />
+    <ClInclude Include="source\gameObject.h" />
+    <ClInclude Include="source\groundCollision.h" />
+    <ClInclude Include="source\imconfig.h" />
+    <ClInclude Include="source\imgui.h" />
+    <ClInclude Include="source\imgui_impl_dx11.h" />
+    <ClInclude Include="source\imgui_impl_win32.h" />
+    <ClInclude Include="source\imgui_internal.h" />
+    <ClInclude Include="source\imstb_rectpack.h" />
+    <ClInclude Include="source\imstb_textedit.h" />
+    <ClInclude Include="source\imstb_truetype.h" />
+    <ClInclude Include="source\input.h" />
+    <ClInclude Include="source\main.h" />
+    <ClInclude Include="source\manager.h" />
+    <ClInclude Include="source\math.h" />
+    <ClInclude Include="source\model.h" />
+    <ClInclude Include="source\modelContainer.h" />
+    <ClInclude Include="source\modelRenderer.h" />
+    <ClInclude Include="source\obbCollider3d.h" />
+    <ClInclude Include="source\particleEmitChecker.h" />
+    <ClInclude Include="source\particleSystem.h" />
+    <ClInclude Include="source\physicsComponent.h" />
+    <ClInclude Include="source\plate2dBlur.h" />
+    <ClInclude Include="source\plate2dRenderer.h" />
+    <ClInclude Include="source\plate3dRenderer.h" />
+    <ClInclude Include="source\playerActionState_LongRoll_Left.h" />
+    <ClInclude Include="source\playerActionState_LongRoll_Right.h" />
+    <ClInclude Include="source\playerActionState_Roll_Left.h" />
+    <ClInclude Include="source\playerActionState_Roll_Right.h" />
+    <ClInclude Include="source\playerActionState_ShortRoll_Left.h" />
+    <ClInclude Include="source\playerActionState_ShortRoll_Right.h" />
+    <ClInclude Include="source\playerAnimationStateBase.h" />
+    <ClInclude Include="source\playerAnimationState_None.h" />
+    <ClInclude Include="source\playerAnimationState_None_Extend.h" />
+    <ClInclude Include="source\playerAnimationState_RodScaling_Extend.h" />
+    <ClInclude Include="source\playerAnimationState_RodScaling_Put.h" />
+    <ClInclude Include="source\playerAnimationState_Roll.h" />
+    <ClInclude Include="source\playerAnimationState_Roll_Left.h" />
+    <ClInclude Include="source\playerAnimationState_Roll_Right.h" />
+    <ClInclude Include="source\playerAnimationState_ShortRoll.h" />
+    <ClInclude Include="source\playerAnimationState_ShortRoll_Left.h" />
+    <ClInclude Include="source\playerAnimationState_ShortRoll_Right.h" />
+    <ClInclude Include="source\playerHpManager.h" />
+    <ClInclude Include="source\playerInputListener_Controller.h" />
+    <ClInclude Include="source\playerInputListener_MouseKeyboard.h" />
+    <ClInclude Include="source\playerActionState_Dash.h" />
+    <ClInclude Include="source\playerActionState_KnockChargeWait.h" />
+    <ClInclude Include="source\playerActionState_RodOpen.h" />
+    <ClInclude Include="source\playerActionState_RodScaling.h" />
+    <ClInclude Include="source\playerActionState_Turn.h" />
+    <ClInclude Include="source\playerManager.h" />
+    <ClInclude Include="source\collisionContactRecorder_PlayerGround.h" />
+    <ClInclude Include="source\playerInputListener.h" />
+    <ClInclude Include="source\playerActionStateBase.h" />
+    <ClInclude Include="source\playerActionState_Avoid.h" />
+    <ClInclude Include="source\playerActionState_ChargeKnock.h" />
+    <ClInclude Include="source\playerActionState_DashKnock.h" />
+    <ClInclude Include="source\playerActionState_DropKnock.h" />
+    <ClInclude Include="source\playerActionState_Knock.h" />
+    <ClInclude Include="source\playerActionState_LongRoll.h" />
+    <ClInclude Include="source\playerActionState_None.h" />
+    <ClInclude Include="source\playerActionState_Roll.h" />
+    <ClInclude Include="source\playerActionState_ShortRoll.h" />
+    <ClInclude Include="source\renderer.h" />
+    <ClInclude Include="source\savedata.h" />
+    <ClInclude Include="source\savedataManager.h" />
+    <ClInclude Include="source\scene.h" />
+    <ClInclude Include="source\scriptComponent.h" />
+    <ClInclude Include="source\skyDome.h" />
+    <ClInclude Include="source\sphereCollider3d.h" />
+    <ClInclude Include="source\systemComponent.h" />
+    <ClInclude Include="source\template.h" />
+    <ClInclude Include="source\test.h" />
+    <ClInclude Include="source\testInvoke.h" />
+    <ClInclude Include="source\testMove.h" />
+    <ClInclude Include="source\testScript.h" />
+    <ClInclude Include="source\testScript2.h" />
+    <ClInclude Include="source\texture.h" />
+    <ClInclude Include="source\textureAnimation.h" />
+    <ClInclude Include="source\textureContainer.h" />
+    <ClInclude Include="source\thirdPersonCamera.h" />
+    <ClInclude Include="source\time.h" />
+    <ClInclude Include="source\transition.h" />
+    <ClInclude Include="source\treeCell.h" />
+    <ClInclude Include="source\uniqueNamingSystem.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\aabbCollider3d.cpp" />
+    <ClCompile Include="source\audio.cpp" />
+    <ClCompile Include="source\audioContainer.cpp" />
+    <ClCompile Include="source\audioSpeaker.cpp" />
+    <ClCompile Include="source\blinkImage.cpp" />
+    <ClCompile Include="source\camera.cpp" />
+    <ClCompile Include="source\capsuleCollider3d.cpp" />
+    <ClCompile Include="source\collider3d.cpp" />
+    <ClCompile Include="source\collision3dManager.cpp" />
+    <ClCompile Include="source\debugCameraControl.cpp" />
+    <ClCompile Include="source\debugConsole.cpp" />
+    <ClCompile Include="source\debugManager.cpp" />
+    <ClCompile Include="source\DirectWrite.cpp" />
+    <ClCompile Include="source\draw2dComponent.cpp" />
+    <ClCompile Include="source\draw3dComponent.cpp" />
+    <ClCompile Include="source\eggEnemyAnimationState_Approach.cpp" />
+    <ClCompile Include="source\eggEnemyAnimationState_Find.cpp" />
+    <ClCompile Include="source\eggEnemyAnimationState_HeadAttack.cpp" />
+    <ClCompile Include="source\eggEnemyAnimationState_KnockBack.cpp" />
+    <ClCompile Include="source\eggEnemyAnimationState_None.cpp" />
+    <ClCompile Include="source\eggEnemyAnimationState_Wince.cpp" />
+    <ClCompile Include="source\eggEnemyManager.cpp" />
+    <ClCompile Include="source\eggEnemyState_Approach.cpp" />
+    <ClCompile Include="source\eggEnemyState_HeadAttack.cpp" />
+    <ClCompile Include="source\eggEnemyState_Death.cpp" />
+    <ClCompile Include="source\eggEnemyState_Find.cpp" />
+    <ClCompile Include="source\eggEnemyState_KnockBack.cpp" />
+    <ClCompile Include="source\eggEnemyState_Search.cpp" />
+    <ClCompile Include="source\eggEnemyState_Stick.cpp" />
+    <ClCompile Include="source\eggEnemyState_Wince.cpp" />
+    <ClCompile Include="source\encryptionSystem.cpp" />
+    <ClCompile Include="source\enemyAnimationStateBase.cpp" />
+    <ClCompile Include="source\enemyAttackCollision.cpp" />
+    <ClCompile Include="source\enemySearchCollision.cpp" />
+    <ClCompile Include="source\enemyStateBase.cpp" />
+    <ClCompile Include="source\firstPersonCamera.cpp" />
+    <ClCompile Include="source\gameObject.cpp" />
+    <ClCompile Include="source\groundCollision.cpp" />
+    <ClCompile Include="source\imgui.cpp" />
+    <ClCompile Include="source\imgui_demo.cpp" />
+    <ClCompile Include="source\imgui_draw.cpp" />
+    <ClCompile Include="source\imgui_impl_dx11.cpp" />
+    <ClCompile Include="source\imgui_impl_win32.cpp" />
+    <ClCompile Include="source\imgui_tables.cpp" />
+    <ClCompile Include="source\imgui_widgets.cpp" />
+    <ClCompile Include="source\input.cpp" />
+    <ClCompile Include="source\main.cpp" />
+    <ClCompile Include="source\manager.cpp" />
+    <ClCompile Include="source\math.cpp" />
+    <ClCompile Include="source\model.cpp" />
+    <ClCompile Include="source\modelContainer.cpp" />
+    <ClCompile Include="source\modelRenderer.cpp" />
+    <ClCompile Include="source\obbCollider3d.cpp" />
+    <ClCompile Include="source\particleSystem.cpp" />
+    <ClCompile Include="source\physicsComponent.cpp" />
+    <ClCompile Include="source\plate2dBlur.cpp" />
+    <ClCompile Include="source\plate2dRenderer.cpp" />
+    <ClCompile Include="source\plate3dRenderer.cpp" />
+    <ClCompile Include="source\playerActionState_LongRoll_Right.cpp" />
+    <ClCompile Include="source\playerActionState_Roll.cpp" />
+    <ClCompile Include="source\playerActionState_Roll_Right.cpp" />
+    <ClCompile Include="source\playerActionState_ShortRoll.cpp" />
+    <ClCompile Include="source\playerActionState_ShortRoll_Right.cpp" />
+    <ClCompile Include="source\playerAnimationStateBase.cpp" />
+    <ClCompile Include="source\playerAnimationState_None.cpp" />
+    <ClCompile Include="source\playerAnimationState_None_Extend.cpp" />
+    <ClCompile Include="source\playerAnimationState_RodScaling_Extend.cpp" />
+    <ClCompile Include="source\playerAnimationState_RodScaling_Put.cpp" />
+    <ClCompile Include="source\playerAnimationState_Roll.cpp" />
+    <ClCompile Include="source\playerAnimationState_Roll_Left.cpp" />
+    <ClCompile Include="source\playerAnimationState_Roll_Right.cpp" />
+    <ClCompile Include="source\playerAnimationState_ShortRoll.cpp" />
+    <ClCompile Include="source\playerAnimationState_ShortRoll_Left.cpp" />
+    <ClCompile Include="source\playerAnimationState_ShortRoll_Right.cpp" />
+    <ClCompile Include="source\playerHpManager.cpp" />
+    <ClCompile Include="source\playerInputListener_Controller.cpp" />
+    <ClCompile Include="source\playerInputListener_MouseKeyboard.cpp" />
+    <ClCompile Include="source\playerActionStateBase.cpp" />
+    <ClCompile Include="source\playerActionState_Avoid.cpp" />
+    <ClCompile Include="source\playerActionState_ChargeKnock.cpp" />
+    <ClCompile Include="source\playerActionState_Dash.cpp" />
+    <ClCompile Include="source\playerActionState_DashKnock.cpp" />
+    <ClCompile Include="source\playerActionState_DropKnock.cpp" />
+    <ClCompile Include="source\playerActionState_Knock.cpp" />
+    <ClCompile Include="source\playerActionState_KnockChargeWait.cpp" />
+    <ClCompile Include="source\playerActionState_LongRoll_Left.cpp" />
+    <ClCompile Include="source\playerActionState_None.cpp" />
+    <ClCompile Include="source\playerActionState_RodOpen.cpp" />
+    <ClCompile Include="source\playerActionState_RodScaling.cpp" />
+    <ClCompile Include="source\playerActionState_Roll_Left.cpp" />
+    <ClCompile Include="source\playerActionState_ShortRoll_Left.cpp" />
+    <ClCompile Include="source\playerActionState_Turn.cpp" />
+    <ClCompile Include="source\playerManager.cpp" />
+    <ClCompile Include="source\playerInputListener.cpp" />
+    <ClCompile Include="source\renderer.cpp" />
+    <ClCompile Include="source\savedataManager.cpp" />
+    <ClCompile Include="source\scene.cpp" />
+    <ClCompile Include="source\scriptComponent.cpp" />
+    <ClCompile Include="source\skyDome.cpp" />
+    <ClCompile Include="source\sphereCollider3d.cpp" />
+    <ClCompile Include="source\systemComponent.cpp" />
+    <ClCompile Include="source\testInvoke.cpp" />
+    <ClCompile Include="source\testMove.cpp" />
+    <ClCompile Include="source\testScript.cpp" />
+    <ClCompile Include="source\testScript2.cpp" />
+    <ClCompile Include="source\texture.cpp" />
+    <ClCompile Include="source\textureAnimation.cpp" />
+    <ClCompile Include="source\textureContainer.cpp" />
+    <ClCompile Include="source\thirdPersonCamera.cpp" />
+    <ClCompile Include="source\time.cpp" />
+    <ClCompile Include="source\transition.cpp" />
+    <ClCompile Include="source\uniqueNamingSystem.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

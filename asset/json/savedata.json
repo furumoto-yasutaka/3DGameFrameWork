@@ -1,0 +1,21 @@
+{
+    "KumiteHard": {
+        "BulletHit": 0,
+        "ChargeBulletHit": 0,
+        "DestroyEnemy": 0,
+        "HitBalloon": 0,
+        "Score": 0
+    },
+    "KumiteNormal": {
+        "BulletHit": 98,
+        "ChargeBulletHit": 13,
+        "DestroyEnemy": 13,
+        "HitBalloon": 2,
+        "Score": 13058
+    },
+    "TargetBreaking": {
+        "NormalTargetBreak": 0,
+        "RareTargetBreak": 0,
+        "Score": 0
+    }
+}
